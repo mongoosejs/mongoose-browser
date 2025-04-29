@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="../dist/mongoose.umd.js"></script>
+  </head>
+  <body>...</body>
+  <script>
+    const schema = new mongoose.Schema({ name: String });
+    const TestModel = mongoose.model('Test', schema);
+
+    const doc = new TestModel({ name: 'Test' });
+    console.log(doc);
+    doc.validate().then(() => {
+      document.body.innerHTML = '<h1>It Works!</h1>';
+    });
+  </script>
+</html>
