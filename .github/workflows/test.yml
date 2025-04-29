@@ -1,0 +1,31 @@
+name: Tests
+on:
+  pull_request:
+  push:
+jobs:
+  test-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.19.0
+      - name: setup project
+        run: npm i
+      - name: run tests
+        run: |
+          npm run test:node
+  test-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.19.0
+      - name: setup project
+        run: npm i
+      - name: run tests
+        run: |
+          npm run test:browser
