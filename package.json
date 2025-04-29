@@ -22,7 +22,7 @@
     "buffer": "^5.6.0",
     "crypto-browserify": "3.12.1",
     "mocha": "^10.2.0",
-    "mongoose": "git+https://github.com/Automattic/mongoose.git#9.0",
+    "mongoose": "git+https://github.com/Automattic/mongoose.git#vkarpov15/gh-15296",
     "playwright": "1.49.1",
     "stream-browserify": "3.0.0",
     "webpack": "5.98.0"
