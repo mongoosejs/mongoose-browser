@@ -1,6 +1,6 @@
 {
   "name": "@mongoosejs/browser",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "browser": "./dist/mongoose.umd.js",
   "scripts": {
