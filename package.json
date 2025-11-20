@@ -1,5 +1,5 @@
 {
-  "package": "@mongoosejs/browser",
+  "name": "@mongoosejs/browser",
   "version": "0.1.0",
   "private": false,
   "browser": "./dist/index.js",
